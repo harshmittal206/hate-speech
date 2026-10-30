@@ -1,0 +1,52 @@
+{
+  "model": "Balanced Logistic Regression",
+  "features": "Word TF-IDF (1,2) + character TF-IDF (3,5)",
+  "accuracy": 0.8886423239862821,
+  "weighted_f1": 0.8909358432605909,
+  "macro_f1": 0.7350911239875481,
+  "class_report": {
+    "Hate Speech": {
+      "precision": 0.3954983922829582,
+      "recall": 0.43006993006993005,
+      "f1-score": 0.4120603015075377,
+      "support": 286.0
+    },
+    "Offensive Language": {
+      "precision": 0.9532735669654985,
+      "recall": 0.9142782699322564,
+      "f1-score": 0.9333687990424259,
+      "support": 3838.0
+    },
+    "No Hate or Offensive Language": {
+      "precision": 0.8010362694300518,
+      "recall": 0.9279711884753902,
+      "f1-score": 0.8598442714126807,
+      "support": 833.0
+    },
+    "accuracy": 0.8886423239862821,
+    "macro avg": {
+      "precision": 0.7166027428928361,
+      "recall": 0.7574397961591922,
+      "f1-score": 0.7350911239875481,
+      "support": 4957.0
+    },
+    "weighted avg": {
+      "precision": 0.8955093206862502,
+      "recall": 0.8886423239862821,
+      "f1-score": 0.8909358432605909,
+      "support": 4957.0
+    }
+  },
+  "class_order": [
+    "Hate Speech",
+    "Offensive Language",
+    "No Hate or Offensive Language"
+  ],
+  "dataset_rows": 24783,
+  "class_counts": {
+    "Offensive Language": 19190,
+    "No Hate or Offensive Language": 4163,
+    "Hate Speech": 1430
+  },
+  "note": "Held-out random stratified split; results are dataset-specific and not a guarantee of real-world performance."
+}
